@@ -1,2 +1,6 @@
-# Data-Structure
-Tutorials and assignments handled by TA.
+# Data-Structure and Algorithms
+
+## Contributors
+Irsyad Nabil
+Ricky Arkan Subekti
+Velta Azizah Destiana
