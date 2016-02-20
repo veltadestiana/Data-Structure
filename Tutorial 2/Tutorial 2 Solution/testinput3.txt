@@ -1,0 +1,10 @@
+COUNTGENRE,Punk￼￼￼
+COUNTFAV
+ADD,Coalition,Iceage,Punk,True
+ADD,Beginning To End,Ta-ku,Hip-hop,False
+ADD,Absolution,Ghost,Metal,True
+ADD,Saeglopur,Sigur Ros,Post-rock,False
+ADD,Kool Thing,Sonic Youth,Rock,True
+PRINT
+MOVE,3,1
+PRINT
