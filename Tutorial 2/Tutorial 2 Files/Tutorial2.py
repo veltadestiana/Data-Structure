@@ -13,10 +13,7 @@
 class Track:
     def __init__(self, title, artist, genre, is_fav):
         # TODO Implement me!
-        self.title = title
-        self.artist = artist
-        self.genre = genre
-        self.is_fav = True if is_fav == 'True' else False
+        pass
 
 
 class Playlist:
@@ -27,63 +24,31 @@ class Playlist:
 
     def add(self, track=None):
         # TODO Implement me!
-        if track in self.queue:
-            print("{} - {} already in playlist.".format(track.artist, track.title))
-            return False
-        self.queue.append(track)
-        print("{} - {} added to playlist.".format(track.artist, track.title))
-        return True
+        pass
 
     def delete_title(self, title):
         # TODO Implement me!
-        for track in self.queue:
-            if track.title == title:
-                print("{} - {} deleted from playlist.".format(track.artist, track.title))
-                del track
-                return True
-        print("{} not found in playlist.".format(title))
-        return False
+        pass
 
     def delete_position(self, pos):
         # TODO Implement me!
-        if pos in range(1, len(self.queue)+1):
-            del self.queue[pos-1]
-            print("Track {} deleted from playlist.".format(pos))
-            return True
-        else:
-            print("Cannot delete track at position {}.".format(pos))
-            return False
+        pass
 
     def move(self, n, m):
         # TODO Implement me!
-        if n in range(1, len(self.queue)+1) and m in range(1, len(self.queue)+1):
-            track = self.queue.pop(n-1)
-            self.queue.insert(m-1, track)
-            print("{} - {} moved into position {}.".format(track.artist, track.title, m))
-        else:
-            print("Invalid track position.")
-        return True
+        pass
 
     def count_genre(self, genre):
         # TODO Implement me!
-        count = 0
-        for track in self.queue:
-            if track.genre == genre:
-                count += 1
-        print("Number of {} tracks: {}".format(genre, count))
+        pass
 
     def count_favourite(self):
         # TODO Implement me!
-        count = 0
-        for track in self.queue:
-            if track.is_fav is True:
-                count += 1
-        print("Number of favourited tracks: {}".format(count))
+        pass
 
     def print_playlist(self):
         # TODO Implement me!
-        for track in self.queue:
-            print("{} - {}".format(track.artist, track.title))
+        pass
 
 
 def main():

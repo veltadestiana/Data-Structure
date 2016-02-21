@@ -1,0 +1,7 @@
+ADD,Get Away,The Internet,Soul,True
+ADD,Ice Cream,Battles,Experimental,True
+ADD,Dopamine,DIIV,Shoegaze,True
+DELTITLE,Dopamine
+ADD,Mostly Hair And Bones Now,Gaza,Hardcore,False
+ADD,Alright,Kendrick Lamar,Hip-hop,False
+DELPOS,2
