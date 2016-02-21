@@ -51,8 +51,9 @@ class Playlist:
     def move(self, n, m):
         # TODO Implement me!
         if n in range(1, len(self.queue)+1) and m in range(1, len(self.queue)+1):
-            self.queue.insert(m-1, self.queue.pop(n-1))
-            print("{} moved into position {}.".format(self.queue[m-1].title, m))
+            track = self.queue.pop(n-1)
+            self.queue.insert(m-1, track)
+            print("{} - {} moved into position {}.".format(track.artist, track.title, m))
         else:
             print("Invalid track position.")
         return True
