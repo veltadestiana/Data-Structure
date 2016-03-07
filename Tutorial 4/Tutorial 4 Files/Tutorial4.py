@@ -39,6 +39,15 @@ def list_max(nestlist):
     else:
         pass
 
+# BONUS POINTS
+def reverse_string(str1, str2):
+    # Return True if input strings are the reversed version of other strings
+    # For example: reverse_string('kasur', 'rusak') will return True
+    if len(str1) != len(str2):
+        pass
+    else:
+        pass
+
 if __name__ == "__main__":
     list1 = [[1,2],3,4,[5,[6,7],8],9,[10]]
     list2 = [54,[24,55],23,63,[12,[87,44]],[61]]
