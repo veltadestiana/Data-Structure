@@ -40,7 +40,7 @@ def list_max(nestlist):
         pass
 
 # BONUS POINTS
-def reverse_string(str1, str2):
+def isPalindrome(str1, str2):
     # Return True if input strings are the reversed version of other strings
     # For example: reverse_string('kasur', 'rusak') will return True
     if len(str1) != len(str2):

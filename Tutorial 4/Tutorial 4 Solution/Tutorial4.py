@@ -49,6 +49,17 @@ def list_max(nestlist):
                 max_num = new_max
         return max_num
 
+# BONUS POINTS
+def isPalindrome(str1, str2):
+    # Return True if input strings are the reversed version of other strings
+    # For example: reverse_string('kasur', 'rusak') will return True
+    if len(str1) != len(str2):
+        return False
+    if str1 == "" and str2 == "":
+        return True
+    else:
+        return str1[0] == str2[-1] and semordnilap(str1[1:-1],str2[1:-1])
+    
 if __name__ == "__main__":
     list1 = [[1,2],3,4,[5,[6,7],8],9,[10]]
     list2 = [54,[24,55],23,63,[12,[87,44]],[61]]
