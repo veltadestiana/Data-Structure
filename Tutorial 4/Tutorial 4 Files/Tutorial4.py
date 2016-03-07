@@ -40,9 +40,9 @@ def list_max(nestlist):
         pass
 
 # BONUS POINTS
-def is_palindrome(str1, str2):
+def reverse(str1, str2):
     # Return True if input strings are the reversed version of other strings
-    # For example: is_palindrome('kasur', 'rusak') will return True
+    # For example: reverse('kasur', 'rusak') will return True
     str1, str2 = str1.lower(), str2.lower()
     # Base case #1: string isn't of same length
     if len(str1) != len(str2):
@@ -71,7 +71,7 @@ if __name__ == "__main__":
         print("list_max() passed")
     else: raise Exception("list_max() failed")
 
-    if is_palindrome("Desserts", "Stressed"):
-        print("is_palindrome() passed")
-    elif is_palindrome("Desserts", "Stressed") is None:
+    if reverse("Desserts", "Stressed"):
+        print("reverse() passed")
+    elif reverse("Desserts", "Stressed") is None:
         raise NotImplemented("bonus points skipped")
