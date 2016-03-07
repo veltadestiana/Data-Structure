@@ -50,15 +50,20 @@ def list_max(nestlist):
         return max_num
 
 # BONUS POINTS
-def isPalindrome(str1, str2):
+def is_palindrome(str1, str2):
     # Return True if input strings are the reversed version of other strings
-    # For example: reverse_string('kasur', 'rusak') will return True
+    # For example: is_palindrome('kasur', 'rusak') will return True
+    str1, str2 = str1.lower(), str2.lower()
+    # Base case #1: string isn't of same length
     if len(str1) != len(str2):
         return False
+    # Base case #2: recursion has reached its end
     if str1 == "" and str2 == "":
         return True
+    # General case: compare individual letters
+    # of the two strings recursively
     else:
-        return str1[0] == str2[-1] and semordnilap(str1[1:-1],str2[1:-1])
+        return str1[0] == str2[-1] and is_palindrome(str1[1:-1],str2[1:-1])
     
 if __name__ == "__main__":
     list1 = [[1,2],3,4,[5,[6,7],8],9,[10]]
@@ -67,9 +72,16 @@ if __name__ == "__main__":
     if factorial(9) == 362880:
         print("factorial() passed")
     else: raise Exception("factorial() failed")
+
     if list_sum(list1) == 55:
         print("list_sum() passed")
     else: raise Exception("list_sum() failed")
+
     if list_max(list2) == 87:
         print("list_max() passed")
     else: raise Exception("list_max() failed")
+
+    if is_palindrome("Desserts", "Stressed"):
+        print("is_palindrome() passed")
+    elif is_palindrome("Desserts", "Stressed") is None:
+        raise NotImplemented("bonus points skipped")
