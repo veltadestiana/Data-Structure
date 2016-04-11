@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../AdvProg/AP-WeeklyPractice/.idea/AP-WeeklyPractice.iml" filepath="$PROJECT_DIR$/../AdvProg/AP-WeeklyPractice/.idea/AP-WeeklyPractice.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Data-Structure.iml" filepath="$PROJECT_DIR$/.idea/Data-Structure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../DjangoTutorial/.idea/DjangoTutorial.iml" filepath="$PROJECT_DIR$/../DjangoTutorial/.idea/DjangoTutorial.iml" />
       <module fileurl="file://$PROJECT_DIR$/../AdvProg/AP-WeeklyPractice/week_6/.idea/week_6.iml" filepath="$PROJECT_DIR$/../AdvProg/AP-WeeklyPractice/week_6/.idea/week_6.iml" />
     </modules>
   </component>
