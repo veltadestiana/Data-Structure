@@ -204,7 +204,7 @@ class BSTNode:
             node = None
         else:
             # Deleted node has one child
-            if not node.has_left() and not node.has_right():
+            if not (node.has_left() and node.has_right()):
                 if node.has_left():
                     node = node.left 
                 else:
@@ -213,7 +213,7 @@ class BSTNode:
             else:
                 successor = self.find_min(self.right)
                 node.value = successor.value
-                self.remove(successor)
+                successor = None
                 
     def __str__(self):
         left_value = self.left.value if self.left is not None else None
