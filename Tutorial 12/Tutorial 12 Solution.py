@@ -3,6 +3,20 @@
 # Name: TODO Write your name here
 # NPM: TODO Write your NPM here
 
+def main():
+    tree = AVLTree()
+    for value in (8,2,12,1,5,10,14,3,9,11,4):
+        tree.insert(value)
+    tree.print()
+
+    tree.delete(8)
+    tree.print()
+
+    tree.delete(1)
+    tree.print()
+
+    tree.delete(2)
+    tree.print()
 
 class Node:
 
@@ -220,8 +234,12 @@ class AVLTree:
     def print(self):
         print(self.root.print())
         
+<<<<<<< Updated upstream
         
 tree = AVLTree()
 for value in (8,69,12,1,5,10,14,3,9,11,4):
     tree.insert(value)
     tree.print()
+=======
+ main()
+>>>>>>> Stashed changes

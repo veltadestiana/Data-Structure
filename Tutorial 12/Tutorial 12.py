@@ -3,6 +3,23 @@
 # Name: TODO Write your name here
 # NPM: TODO Write your NPM here
 
+<<<<<<< Updated upstream
+=======
+def main():
+    tree = AVLTree()
+    for value in (8,69,12,1,5,10,14,3,9,11,4):
+        tree.insert(value)
+    tree.print()
+
+    tree.delete(8)
+    tree.print()
+
+    tree.delete(1)
+    tree.print()
+
+    tree.delete(2)
+    tree.print()
+>>>>>>> Stashed changes
 
 class Node:
 
@@ -103,22 +120,34 @@ class AVLTree:
         if value == current.value:
             # Deleted node is a leaf
             if current.left is None and current.right is None:
-                pass
+                current = None
             # Deleted node has one child
             elif not (current.left and current.right):
                 if current.left:
+<<<<<<< Updated upstream
                     pass
                 else:
                     pass
             # Deleted node has two children
             else:
                 pass
+=======
+                    current = current.left
+                else:
+                    current = current.right
+            # Deleted node has two children
+            else:
+                successor = self.find_min(current.right)
+                temp = successor.value
+                self.delete(successor.value, current)
+                current.value = temp
+>>>>>>> Stashed changes
 
         # The value to be deleted is less than the current
         # node's value. The node is recursively deleted
         # from the current node's left children.
         elif value < current.value:
-            pass
+            current.left = self.delete(value, current.left)
 
             # If the current node's balance factor is less
             # than 1, then it is right-heavy. Perform the
@@ -126,15 +155,15 @@ class AVLTree:
             # Ex: current = current.rotate_right_left()
             if current.balance() < -1:
                 if value < current.right.value:
-                    pass
+                    current = current.rotate_left()
                 else:
-                    pass
+                    current = current.rotate_right_left()
 
         # The value to be deleted is greater than the current
         # node's value. The node is recursively deleted
         # from the current node's right children.
         elif value > current.value:
-            pass
+            current.right = self.delete(value, current.right)
 
             # If the current node's balance factor is greater
             # than 1, then it is left-heavy. Perform the
@@ -142,9 +171,9 @@ class AVLTree:
             # Ex: current = current.rotate_right_left()
             if current.balance() > 1:
                 if value > current.left.value:
-                    pass
+                    current = current.rotate_right()
                 else:
-                    pass
+                    current = current.rotate_left_right()
 
         return current
         
@@ -153,11 +182,36 @@ class AVLTree:
         specified search value. Returns None if no node with a
         matching value is found."""
         # TODO: Implement Me!
+<<<<<<< Updated upstream
         pass
 
     def insert(self, value):
         if self.root is None:
             self.root = Node(value)
+=======
+        if value == self.value:
+            return self
+        elif value < self.value:
+            if self.left is not None:
+                return self.left.find(value)
+            else:
+                return None
+        elif value > self.value:
+            if self.right is not None:
+                return self.right.find(value)
+            else:
+                return None
+            
+    def balance(self):
+        """Returns the balance factor of a node, which is the
+        height of its left subtree subtracted by the height of
+        its right subtree."""
+        return self.height(self.left) - self.height(self.right)
+        
+    def height(self, node):
+        if not node:
+            return -1
+>>>>>>> Stashed changes
         else:
             self._insert(Node(value), self.root)
 
@@ -206,8 +260,11 @@ class AVLTree:
     def print(self):
         print(self.root.print())
         
+<<<<<<< Updated upstream
         
 tree = AVLTree()
 for value in (8,69,12,1,5,10,14,3,9,11,4):
     tree.insert(value)
     tree.print()
+=======
+>>>>>>> Stashed changes
