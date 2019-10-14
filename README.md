@@ -7,3 +7,4 @@ This repository is made to create a collection of incoming and future lab tutori
 - Irsyad Nabil
 - Ricky Arkan Subekti
 - Velta Azizah Destiana
+- Ryorda Triaptahadi
